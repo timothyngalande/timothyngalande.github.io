@@ -170,13 +170,13 @@ renders as
 Add engaging call-to-action buttons to your data visualization posts:
 
 ### Basic Buttons
-
+```
 {{< button url="/" >}}Contact Us{{< /button >}}
 
 &nbsp;
 
 {{< button url="https://plotly.com/python/" new_tab="true" style="secondary" >}}Learn Plotly{{< /button >}}
-
+```
 ```go-html-template
 {{</* button url="/" */>}}Contact Us{{</* /button */>}}
 
