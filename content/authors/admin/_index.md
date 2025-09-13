@@ -1,5 +1,4 @@
 ---
-
 # Display name
 title: Timothy Ngalande
 
@@ -15,7 +14,7 @@ pronouns: he/him
 
 # Status emoji
 status:
-  icon: 
+  icon: 🚀
 
 # Is this the primary user of the site?
 superuser: true
@@ -28,8 +27,8 @@ role: PhD Candidate
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Economics Department (LEAP) Stellenbosch University
-    url:
+  - name: Economics (LEAP) Stellenbosch University
+    url: https://ai.meta.com/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -39,42 +38,43 @@ profiles:
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/Timmall
- - icon: brands/github
-    url: https://github.com/alexjohnsonai -->
+  - icon: brands/github
+    url: https://github.com/timothyngalande
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/timothy-ngalande-368749a1/
+    url: https://www.linkedin.com/in/Timothy-Ngalande/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=alexjohnson
   - icon: academicons/orcid
     url: https://orcid.org/0000-0002-1825-0097
 
-Reseach interests:
-  - Labour Economics
-  - Economic History
-  - Applied Macro/Micro -economics
+interests:
+  - Large Language Models
+  - Computer Vision
+  - Reinforcement Learning
+  - AI Ethics
 
 education:
-  - area: PhD Economics 
-    institution: Stellenbosch University
-    date_start: 2021-04-01
-    date_end: 2025-11-25
+  - area: PhD Computer Science (AI Focus)
+    institution: Stanford University
+    date_start: 2015-09-01
+    date_end: 2019-06-30
     summary: |
-      Growth, Productivity, Labour Misallocation, and the Paradox of Apartheid in 20th Century South Africa.
+      Thesis on _Scaling Laws for Neural Language Models_. Supervised by Prof. Andrew Ng. Published 5 papers in NeurIPS and ICML, with 2 best paper awards.
     button:
-      text: 'Job Market Paper'
+      text: 'Read Thesis'
       url: 'https://example.com/thesis.pdf'
-  - area: MRes Economics
-    institution: Warwick University
-    date_start: 2018-09-17
-    date_end: 2020-06-30
+  - area: MS Computer Science
+    institution: Carnegie Mellon University
+    date_start: 2013-09-01
+    date_end: 2015-05-31
     summary: |
       GPA: 4.0/4.0
 
       Specialized in machine learning and robotics.
-  - area: Mcom Economics
-    institution: Stellenbosch University
-    date_start: 2017-01-01
-    date_end: 2018-11-30
+  - area: BS Computer Science
+    institution: MIT
+    date_start: 2009-09-01
+    date_end: 2013-05-31
     summary: |
       GPA: 3.9/4.0
 
