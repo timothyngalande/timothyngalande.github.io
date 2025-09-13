@@ -79,7 +79,7 @@ education:
 
       Minored in Mathematics. President of AI Club.
 
-<!--- work:
+work:
   - position: Senior AI Research Scientist
     company_name: Meta AI
     company_url: 'https://ai.meta.com/'
