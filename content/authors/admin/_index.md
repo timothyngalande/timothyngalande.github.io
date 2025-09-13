@@ -38,20 +38,15 @@ profiles:
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/Timmall
-  - icon: 
-    url: https://github.com/timothyngalande
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/Timothy-Ngalande-368749a1/
-  - icon: 
-    url: https://scholar.google.com/citations?user=alexjohnson
-  - icon: 
-    url: https://orcid.org/0000-0002-1825-0097
+
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Economic Research
+  - Labour Economics
+  - Development Economics
+  - Applied Micro/Macro economics
 
 education:
   - area: PhD Economicw
