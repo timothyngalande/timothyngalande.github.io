@@ -1,20 +1,20 @@
 ---
 # Display name
-title: Alex Johnson
+title: Timothy Ngalande
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Alex
-last_name: Johnson
+first_name: Timothy
+last_name: Ngalande
 
 # Pronouns (optional)
 pronouns: he/him
 
 # Status emoji
 status:
-  icon: 🚀
+  icon: - .. --
 
 # Is this the primary user of the site?
 superuser: true
@@ -23,64 +23,63 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Senior AI Research Scientist
+role: PhD Candidate
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: Economics Department (LEAP) Stellenbosch University
+    url:
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:alex.johnson@meta.com'
+    url: 'mailto:timngalande@sun.ac.za'
     label: E-mail Me
   - icon: brands/x
-    url: https://twitter.com/AlexAIResearch
-  - icon: brands/github
-    url: https://github.com/alexjohnsonai
+    url: https://twitter.com/Timmall
+    <!--- - icon: brands/github
+    url: https://github.com/alexjohnsonai -->
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnsonai/
-  - icon: academicons/google-scholar
+    url: https://www.linkedin.com/in/timothy-ngalande-368749a1/
+    <!--- - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=alexjohnson
-  - icon: academicons/orcid
+    <!--- - icon: academicons/orcid
     url: https://orcid.org/0000-0002-1825-0097
 
-interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+Reseach interests:
+  - Labour Economics
+  - Economic History
+  - Applied Macro/Micro -economics
 
 education:
-  - area: PhD Computer Science (AI Focus)
-    institution: Stanford University
-    date_start: 2015-09-01
-    date_end: 2019-06-30
+  - area: PhD Economics 
+    institution: Stellenbosch University
+    date_start: 2021-04-01
+    date_end: 2025-11-25
     summary: |
-      Thesis on _Scaling Laws for Neural Language Models_. Supervised by Prof. Andrew Ng. Published 5 papers in NeurIPS and ICML, with 2 best paper awards.
+      Growth, Productivity, Labour Misallocation, and the Paradox of Apartheid in 20th Century South Africa.
     button:
-      text: 'Read Thesis'
+      text: 'Job Market Paper'
       url: 'https://example.com/thesis.pdf'
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
-    date_start: 2013-09-01
-    date_end: 2015-05-31
-    summary: |
+  - area: MRes Economics
+    institution: Warwick University
+    date_start: 2018-09-17
+    date_end: 2020-06-30
+    <!--- summary: |
       GPA: 4.0/4.0
 
       Specialized in machine learning and robotics.
-  - area: BS Computer Science
-    institution: MIT
-    date_start: 2009-09-01
-    date_end: 2013-05-31
-    summary: |
+  - area: Mcom Economics
+    institution: Stellenbosch University
+    date_start: 2017-01-01
+    date_end: 2018-11-30
+    <!--- summary: |
       GPA: 3.9/4.0
 
       Minored in Mathematics. President of AI Club.
 
-work:
+<!--- work:
   - position: Senior AI Research Scientist
     company_name: Meta AI
     company_url: 'https://ai.meta.com/'
