@@ -10,11 +10,11 @@ first_name: Timothy
 last_name: Ngalande
 
 # Pronouns (optional)
-pronouns: he/him
+pronouns: 
 
 # Status emoji
 status:
-  icon: 🚀
+  icon: 
 
 # Is this the primary user of the site?
 superuser: true
@@ -28,7 +28,7 @@ role: PhD Candidate
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: Economics (LEAP) Stellenbosch University
-    url: https://ai.meta.com/
+    url: 
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -38,13 +38,13 @@ profiles:
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/Timmall
-  - icon: brands/github
+  - icon: 
     url: https://github.com/timothyngalande
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/Timothy-Ngalande/
-  - icon: academicons/google-scholar
+    url: https://www.linkedin.com/in/Timothy-Ngalande-368749a1/
+  - icon: 
     url: https://scholar.google.com/citations?user=alexjohnson
-  - icon: academicons/orcid
+  - icon: 
     url: https://orcid.org/0000-0002-1825-0097
 
 interests:
@@ -54,49 +54,42 @@ interests:
   - AI Ethics
 
 education:
-  - area: PhD Computer Science (AI Focus)
-    institution: Stanford University
-    date_start: 2015-09-01
-    date_end: 2019-06-30
+  - area: PhD Economicw
+    institution: Stellenbosch University
+    date_start: 2021-04-01
+    date_end: 2025-11-30
     summary: |
-      Thesis on _Scaling Laws for Neural Language Models_. Supervised by Prof. Andrew Ng. Published 5 papers in NeurIPS and ICML, with 2 best paper awards.
+      Thesis on _Growth, Productivity and Labour Misallocation: Apartheid South Africa_
     button:
-      text: 'Read Thesis'
+      text: 'Job Market Paper'
       url: 'https://example.com/thesis.pdf'
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
-    date_start: 2013-09-01
-    date_end: 2015-05-31
-    summary: |
-      GPA: 4.0/4.0
-
-      Specialized in machine learning and robotics.
-  - area: BS Computer Science
-    institution: MIT
-    date_start: 2009-09-01
-    date_end: 2013-05-31
-    summary: |
-      GPA: 3.9/4.0
-
-      Minored in Mathematics. President of AI Club.
+  - area: MRes Economics
+    institution: Warwick University
+    date_start: 2018-09-17
+    date_end: 2020-06-30
+    summary: 
+  - area: MCom Economics
+    institution: Stellenbosch University
+    date_start: 2017-02-04
+    date_end: 2018-11-30
+    summary: 
 
 work:
-  - position: Senior AI Research Scientist
-    company_name: Meta AI
-    company_url: 'https://ai.meta.com/'
-    company_logo: ''
-    date_start: 2020-01-01
-    date_end: ''
-    summary: |2-
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
-  - position: AI Research Intern
-    company_name: OpenAI
-    company_url: 'https://openai.com/'
-    company_logo: ''
-    date_start: 2019-06-01
-    date_end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+  - position: 
+    company_name: 
+    company_url:
+    company_logo: 
+    date_start:
+    date_end: 
+    summary: 
+     
+  - position: 
+    company_name: 
+    company_url: 
+    company_logo:
+    date_start:
+    date_end: 
+    summary:
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -135,8 +128,7 @@ skills:
 languages:
   - name: English
     percent: 100
-  - name: Spanish
-    percent: 50
+
 
 # Awards.
 #   Add/remove as many awards below as you like.
