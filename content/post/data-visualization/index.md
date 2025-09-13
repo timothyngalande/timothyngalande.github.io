@@ -185,15 +185,7 @@ Add engaging call-to-action buttons to your data visualization posts:
 
 ### Styled Buttons for Data Actions
 
-{{< button url="#" style="primary" size="lg" align="center" icon="chart-bar" >}}View Dashboard{{< /button >}}
 
-&nbsp;
-
-{{< button url="/data/results.csv" style="outline" icon="document-arrow-down" >}}Download Data{{< /button >}}
-
-&nbsp;
-
-{{< button url="https://github.com/HugoBlox" new_tab="true" style="ghost" icon="arrow-top-right-on-square" icon_position="right" >}}View Source Code{{< /button >}}
 
 ```go-html-template
 {{</* button url="#" style="primary" size="lg" align="center" icon="chart-bar" */>}}View Dashboard{{</* /button */>}}
@@ -205,11 +197,7 @@ Add engaging call-to-action buttons to your data visualization posts:
 
 ### Multiple Aligned Buttons
 
-{{< button url="https://jupyter.org/" new_tab="true" style="secondary" rounded="full" align="center" >}}Try Jupyter{{< /button >}}
 
-&nbsp;
-
-{{< button url="https://colab.research.google.com/" new_tab="true" style="primary" rounded="full" align="center" icon="rocket-launch" >}}Open in Colab{{< /button >}}
 
 ```go-html-template
 {{</* button url="https://jupyter.org/" new_tab="true" style="secondary" rounded="full" align="center" */>}}Try Jupyter{{</* /button */>}}
