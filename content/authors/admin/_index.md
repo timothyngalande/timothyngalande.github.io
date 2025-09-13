@@ -38,13 +38,13 @@ profiles:
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/Timmall
-    <!--- - icon: brands/github
+ - icon: brands/github
     url: https://github.com/alexjohnsonai -->
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/timothy-ngalande-368749a1/
-    <!--- - icon: academicons/google-scholar
+  - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=alexjohnson
-    <!--- - icon: academicons/orcid
+  - icon: academicons/orcid
     url: https://orcid.org/0000-0002-1825-0097
 
 Reseach interests:
@@ -66,7 +66,7 @@ education:
     institution: Warwick University
     date_start: 2018-09-17
     date_end: 2020-06-30
-    <!--- summary: |
+    summary: |
       GPA: 4.0/4.0
 
       Specialized in machine learning and robotics.
@@ -74,7 +74,7 @@ education:
     institution: Stellenbosch University
     date_start: 2017-01-01
     date_end: 2018-11-30
-    <!--- summary: |
+    summary: |
       GPA: 3.9/4.0
 
       Minored in Mathematics. President of AI Club.
