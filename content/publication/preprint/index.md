@@ -19,7 +19,7 @@ publication_short: ""
 abstract: 
 
 # Summary. An optional shortened abstract.
-summary: A quasi-experimental research design to examine a crucial instrument of state policy: the national railway system. It finds that state-led upgrades to the railway network—a tool explicitly used to enforce spatial segregation—causally increased aggregate productivity in the districts it connected. The mechanism for this gain was an enhancement of allocative efficiency, as the modernized infrastructure reduced the effective economic distance between segregated residential areas and industrial centres, thereby mitigating the very spatial distortions it was designed to support. 
+summary: A quasi-experimental research design to examine a crucial instrument of state policy; the national railway system. It finds that state-led upgrades to the railway network—a tool explicitly used to enforce spatial segregation—causally increased aggregate productivity in the districts it connected. The mechanism for this gain was an enhancement of allocative efficiency, as the modernized infrastructure reduced the effective economic distance between segregated residential areas and industrial centres, thereby mitigating the very spatial distortions it was designed to support. 
 
 
 tags:
