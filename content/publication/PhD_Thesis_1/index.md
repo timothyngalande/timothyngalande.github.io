@@ -1,7 +1,7 @@
 ---
 title: "Race-biased technological progress and growth in 20th Century Industrial South Africa"
 authors:
-# - admin
+- admin
 # - Robert Ford
 author_notes:
 # - "Equal contribution"
@@ -17,7 +17,7 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["paper"]
         #["article-journal"] ["paper-conference"]
 # Publication name and optional abbreviated publication name.
-publication: "*Journal of Source Themes, 1*(1)"
+publication: 
 publication_short: ""
 
 abstract: The study undertakes a granular growth accounting analysis of the mining and manufacturing sectors, the twin engines of 20th-century growth. It finds that manufacturing growth was driven by technological progress that was racially biased, while the mining sector relied more heavily on the intensification of cheap, unskilled Black labour.
@@ -56,7 +56,7 @@ links:
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: **Timothy Ngalande**'
+  caption: 
   focal_point: ""
   preview_only: false
 
