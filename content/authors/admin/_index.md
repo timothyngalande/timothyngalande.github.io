@@ -153,4 +153,4 @@ awards:
       Recognized for contributions to scaling laws in deep learning.
 ---
 
-Alex Johnson is a Senior AI Research Scientist at Meta AI, where he leads groundbreaking work on large language models and multimodal systems. His research has been published in top conferences like NeurIPS and ICML, with over 10,000 citations. Alex is passionate about pushing the boundaries of AI while ensuring ethical development. Outside of work, he enjoys hiking in the Rockies, building custom PCs, and mentoring the next generation of AI talent.
+Timothy Ngalande is a PhD and Job Market candidate in Economics. His research focusses on labour markets and the related frictions present in the market. His PhD focused on labour markets during Apartheid, analysing the consequences of discrimination. His research interests are in Development, Labour, Applied Micro/Macro Economics and Economic History. He is affiliated to Laboratory of Economics of Africa's Past (LEAP) 
