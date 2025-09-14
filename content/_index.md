@@ -43,7 +43,7 @@ sections:
       columns: '1'
 
    
- <!---   - block: collection
+  - block: collection
     id: papers
     content:
       title: Featured Publications
