@@ -34,10 +34,10 @@ hugoblox:
     arxiv: 1512.04133v1
 
 links:
-  - type: pdf
-    url: http://arxiv.org/pdf/1512.04133v1
-  - type: code
-    url: https://github.com/HugoBlox/hugo-blox-builder
+  # - type: pdf
+  #   url: http://arxiv.org/pdf/1512.04133v1
+  # - type: code
+  #   url: https://github.com/HugoBlox/hugo-blox-builder
   # - type: dataset
   #   url: ""
   # - type: poster
