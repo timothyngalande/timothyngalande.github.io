@@ -45,6 +45,7 @@ profiles:
 interests:
   - Economic Research
   - Labour Economics
+  - Economic History
   - Development Economics
   - Applied Micro/Macro economics
 
