@@ -1,12 +1,12 @@
 ---
-title: "An example journal article"
+title: "Race-biased technological progress and growth in 20th Century Industrial South Africa"
 authors:
-- admin
-- Robert Ford
+# - admin
+# - Robert Ford
 author_notes:
-- "Equal contribution"
-- "Equal contribution"
-date: "2015-09-01T00:00:00Z"
+# - "Equal contribution"
+# - "Equal contribution"
+date: "2023-09-01T00:00:00Z"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
@@ -14,24 +14,26 @@ publishDate: "2017-01-01T00:00:00Z"
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ["article-journal"]
-
+publication_types: ["paper"]
+        #["article-journal"] ["paper-conference"]
 # Publication name and optional abbreviated publication name.
 publication: "*Journal of Source Themes, 1*(1)"
 publication_short: ""
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: The study undertakes a granular growth accounting analysis of the mining and manufacturing sectors, the twin engines of 20th-century growth. It finds that manufacturing growth was driven by technological progress that was racially biased, while the mining sector relied more heavily on the intensification of cheap, unskilled Black labour.
+
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: The study undertakes a granular growth accounting analysis of the mining and manufacturing sectors, the twin engines of 20th-century growth. It finds that manufacturing growth was driven by technological progress that was racially biased, while the mining sector relied more heavily on the intensification of cheap, unskilled Black labour.
+
 
 tags:
-- Source Themes
+- PhD Thesis first paper
 featured: false
 
 hugoblox:
   ids:
-    arxiv: 1512.04133v1
+    # arxiv: 1512.04133v1
 
 links:
   # - type: pdf
@@ -54,7 +56,7 @@ links:
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+  caption: 'Image credit: **Timothy Ngalande**'
   focal_point: ""
   preview_only: false
 
@@ -73,7 +75,7 @@ projects: []
 slides: ""
 ---
 
-{{% callout note %}}
+<!-- {{% callout note %}}
 Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
 {{% /callout %}}
 
@@ -81,4 +83,4 @@ Click the *Cite* button above to demo the feature to enable visitors to import p
 Create your slides in Markdown - click the *Slides* button to check out the example.
 {{% /callout %}}
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->
