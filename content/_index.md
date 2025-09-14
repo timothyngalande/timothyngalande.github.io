@@ -27,8 +27,8 @@ sections:
       css_class: hbx-bg-gradient
       # Avatar customization
       avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
+        size: large # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
+        shape: rounded # Options: circle (default), square, rounded
   - block: markdown
     content:
       title: '📚 My Research'
@@ -41,7 +41,9 @@ sections:
         Please reach out to collaborate 😃
     design:
       columns: '1'
-  - block: collection
+
+   
+ <!---   - block: collection
     id: papers
     content:
       title: Featured Publications
@@ -71,7 +73,7 @@ sections:
           - event
     design:
       view: card
-  - block: collection
+ - block: collection
     id: news
     content:
       title: Recent News
@@ -101,7 +103,7 @@ sections:
       spacing:
         padding: [0, 0, 0, 0]
   - block: cta-card
-    demo: true # Only display this section in the Hugo Blox Builder demo site
+    demo: false # Only display this section in the Hugo Blox Builder demo site
     content:
       title: 👉 Build your own academic website like this
       text: |-
