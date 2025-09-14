@@ -37,7 +37,7 @@ header:
     logo:
       text: 'Timothy Ngalande'
 
-Site footer
+# Site footer
 footer:
   copyright:
     notice: '© {year} Timothy Ngalande'
@@ -45,7 +45,7 @@ footer:
     #   enable: true
     #   allow_derivatives: false
     #   share_alike: true
-    #   allow_commercial: false
+#       allow_commercial: false
 
 # Localization
 locale:
