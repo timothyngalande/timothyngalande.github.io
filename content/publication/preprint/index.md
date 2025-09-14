@@ -32,7 +32,7 @@ hugoblox:
     # arxiv: 1512.04133v1
 
 links:
- - type: pdf
+  - type: pdf
     url: ""
 # - type: preprint
 #   provider: arxiv
