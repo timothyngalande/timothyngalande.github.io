@@ -1,20 +1,20 @@
 ---
-title: Learn JavaScript
-summary: Easily learn JavaScript in 10 minutes!
-date: 2023-10-24
-type: docs
+title: Data Science Bootcamp
+summary: 
+date: 2022-10-24
+# type: docs
 math: false
 tags:
-  - JavaScript
+  - Python 
 image:
-  caption: 'Embed rich media such as videos and LaTeX math'
+  caption:
 content_meta:
-  content_type: 'Tutorial'
+  content_type: 'Lecture and Tutorial'
   difficulty: 'Beginner'
-  prerequisites: ['HTML']
-  trending: true
+  prerequisites: ['PYTHON','SQL']
+  trending: false
 ---
-
+<!-- 
 [Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
 
 **Embed videos, podcasts, code, LaTeX math, and even test students!**
@@ -141,4 +141,4 @@ renders as
 
 {{< icon name="python" >}} Python
 
-## Did you find this page helpful? Consider sharing it 🙌
+## Did you find this page helpful? Consider sharing it 🙌 -->
