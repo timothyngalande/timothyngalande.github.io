@@ -32,8 +32,8 @@ hugoblox:
     # arxiv: 1512.04133v1
 
 links:
-  - type: pdf
-    url: ""
+  # - type: pdf
+  #   url: ""
 # - type: preprint
 #   provider: arxiv
 #   id: 1512.04133v1

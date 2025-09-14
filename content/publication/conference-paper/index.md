@@ -1,5 +1,5 @@
 ---
-title: 'Qunatifying Apartness in South Africa: A general equilibrium estimation of the impact or Labour Discrimination '
+title: 'Quantifying Apartness in South Africa: A general equilibrium estimation of the impact or Labour Discrimination '
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -46,8 +46,8 @@ hugoblox:
 
 # Custom links
 links:
-  - type: pdf
-    url: ""
+  # - type: pdf
+  #   url: ""
   # - type: code
   #   url: https://github.com/HugoBlox/hugo-blox-builder
   # - type: dataset
