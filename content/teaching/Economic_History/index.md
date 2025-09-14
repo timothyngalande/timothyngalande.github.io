@@ -1,7 +1,7 @@
 ---
 title: Economic History
 summary: 
-date: 2018-10-24
+date: 2018-02-02
 # type: docs
 math: false
 tags:
@@ -10,7 +10,7 @@ image:
   # caption: 'Embed rich media such as videos and LaTeX math'
 content_meta:
   content_type: 'Journal Articles'
-  difficulty: 'Postrgraduate'
+  difficulty: 'Postgraduate'
   prerequisites: ['Econ 100']
   trending: false
 ---

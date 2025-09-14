@@ -1,7 +1,7 @@
 ---
 title: Math for Economists
 summary: 
-date: 2017-10-24
+date: 2017-02-01
 # type: docs
 math: false
 tags:

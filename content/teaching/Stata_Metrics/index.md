@@ -1,7 +1,7 @@
 ---
 title: Stata for Econometrics
 summary: 
-date: 2017-10-24
+date: 2017-02-02
 # type: docs
 math: false
 tags:
@@ -10,7 +10,7 @@ image:
   # caption: 'Embed rich media such as videos and LaTeX math'
 content_meta:
   content_type: 'Tutorial'
-  difficulty: 'Begginer'
+  difficulty: 'Beginner'
   prerequisites: ['STATA']
   trending: false
 ---

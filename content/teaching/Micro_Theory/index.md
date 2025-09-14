@@ -1,7 +1,7 @@
 ---
 title: Microeconomics - Game Theory
 summary: 
-date: 2022-10-24
+date: 2022-06-24
 # type: docs
 math: false
 tags:
