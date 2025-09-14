@@ -35,9 +35,9 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: 'Your Name'
+      text: 'Timothy Ngalande'
 
-# Site footer
+Site footer
 footer:
   copyright:
     notice: '© {year} Timothy Ngalande'
