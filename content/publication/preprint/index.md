@@ -1,5 +1,5 @@
 ---
-title: "Geographical Segregation, Missallocation and Productivity in Apartheid South Africa Manufacturing: large{The Barrier-Breaking Iron Tracks of Growth"
+title: "Geographical Segregation, Missallocation and Productivity in Apartheid South Africa Manufacturing: The Barrier-Breaking Iron Tracks of Growth"
 authors:
 - admin
 date: "2025-01-01T00:00:00Z"
@@ -16,7 +16,7 @@ publication_types: ["article"]
 publication: ""
 publication_short: ""
 
-abstract: 
+abstract: A quasi-experimental research design to examine a crucial instrument of state policy; the national railway system. It finds that state-led upgrades to the railway network—a tool explicitly used to enforce spatial segregation—causally increased aggregate productivity in the districts it connected. The mechanism for this gain was an enhancement of allocative efficiency, as the modernized infrastructure reduced the effective economic distance between segregated residential areas and industrial centres, thereby mitigating the very spatial distortions it was designed to support. 
 
 # Summary. An optional shortened abstract.
 summary: A quasi-experimental research design to examine a crucial instrument of state policy; the national railway system. It finds that state-led upgrades to the railway network—a tool explicitly used to enforce spatial segregation—causally increased aggregate productivity in the districts it connected. The mechanism for this gain was an enhancement of allocative efficiency, as the modernized infrastructure reduced the effective economic distance between segregated residential areas and industrial centres, thereby mitigating the very spatial distortions it was designed to support. 
@@ -32,6 +32,8 @@ hugoblox:
     # arxiv: 1512.04133v1
 
 links:
+ - type: pdf
+    url: ""
 # - type: preprint
 #   provider: arxiv
 #   id: 1512.04133v1

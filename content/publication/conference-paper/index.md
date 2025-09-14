@@ -1,19 +1,19 @@
 ---
-title: 'An example conference paper'
+title: 'Qunatifying Apartness in South Africa: A general equilibrium estimation of the impact or Labour Discrimination '
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
-  - Robert Ford
+  # - Robert Ford
 
 # Author notes (optional)
 author_notes:
-  - 'Equal contribution'
-  - 'Equal contribution'
+  # - 'Equal contribution'
+  # - 'Equal contribution'
 
-date: '2013-07-01T00:00:00Z'
+date: '2025-07-01T00:00:00Z'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -24,16 +24,17 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Hugo Blox Builder Conference*
-publication_short: In *ICW*
+publication: 
+publication_short: 
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: The study develops and calibrates a static general equilibrium model to quantify the aggregate economic losses attributable to discriminatory labour market policies, specifically the ``job reservation" system. A counterfactual analysis reveals that eliminating these race-based frictions would have resulted in significant gains in aggregate output. A decomposition of this effect shows that the entire productivity cost of discrimination is attributable to a decline in allocative efficiency, not the technical efficiency of firm. This demonstrates that the primary cost was the prevention of workers from sorting into their most productive roles.
+
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: The study develops and calibrates a static general equilibrium model to quantify the aggregate economic losses attributable to discriminatory labour market policies, specifically the ``job reservation" system. A counterfactual analysis reveals that eliminating these race-based frictions would have resulted in significant gains in aggregate output. A decomposition of this effect shows that the entire productivity cost of discrimination is attributable to a decline in allocative efficiency, not the technical efficiency of firm. This demonstrates that the primary cost was the prevention of workers from sorting into their most productive roles.
 
 tags:
-  - Large Language Models
+  - Phd Thesis Second paper
 
 # Display this page in the Featured widget?
 featured: true
@@ -41,27 +42,27 @@ featured: true
 # Standard identifiers for auto-linking
 hugoblox:
   ids:
-    doi: 10.5555/123456
+    # doi: 10.5555/123456
 
 # Custom links
 links:
   - type: pdf
     url: ""
-  - type: code
-    url: https://github.com/HugoBlox/hugo-blox-builder
-  - type: dataset
-    url: https://github.com/HugoBlox/hugo-blox-builder
-  - type: slides
-    url: https://www.slideshare.net/
-  - type: source
-    url: https://github.com/HugoBlox/hugo-blox-builder
-  - type: video
-    url: https://youtube.com
+  # - type: code
+  #   url: https://github.com/HugoBlox/hugo-blox-builder
+  # - type: dataset
+  #   url: https://github.com/HugoBlox/hugo-blox-builder
+  # - type: slides
+  #   url: https://www.slideshare.net/
+  # - type: source
+  #   url: https://github.com/HugoBlox/hugo-blox-builder
+  # - type: video
+  #   url: https://youtube.com
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: 'Image credit: [**Timothy Ngalande**]'
   focal_point: ''
   preview_only: false
 
@@ -71,7 +72,7 @@ image:
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-  - example
+  # - example
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
