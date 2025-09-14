@@ -2,7 +2,7 @@
 title: "Geographical Segregation, Missallocation and Productivity in Apartheid South Africa Manufacturing: large{The Barrier-Breaking Iron Tracks of Growth"
 authors:
 - admin
-date: "2025"
+date: "2025-01-01T00:00:00Z"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
