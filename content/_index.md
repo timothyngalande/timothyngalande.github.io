@@ -61,6 +61,7 @@ sections:
           - publication
         exclude_featured: false
     design:
+      view: 5
     
       # other options compact, list, card, showcase,citation
 
