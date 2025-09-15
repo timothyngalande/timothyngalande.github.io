@@ -5,11 +5,11 @@ date: 2022-10-24
 # type: docs
 math: false
 tags:
-  - Python 
+  - 2022 
 image:
   caption:
 content_meta:
-  content_type: 'Lecture and Tutorial'
+  content_type: 'Course and Tutorial'
   difficulty: 'Beginner'
   prerequisites: ['PYTHON','SQL']
   trending: false

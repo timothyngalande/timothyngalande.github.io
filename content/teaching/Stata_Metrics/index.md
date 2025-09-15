@@ -5,11 +5,11 @@ date: 2017-02-02
 # type: docs
 math: false
 tags:
-  - STATA for Econometrics
+  - 2017
 image:
   # caption: 'Embed rich media such as videos and LaTeX math'
 content_meta:
-  content_type: 'Tutorial'
+  content_type: 'Teaching Assistance'
   difficulty: 'Beginner'
   prerequisites: ['STATA']
   trending: false

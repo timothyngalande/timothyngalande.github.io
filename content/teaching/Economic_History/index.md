@@ -5,11 +5,11 @@ date: 2018-02-02
 # type: docs
 math: false
 tags:
-  - Teaching Assistance - (2018, 2022)
+  - 2018, 2022
 image:
   # caption: 'Embed rich media such as videos and LaTeX math'
 content_meta:
-  content_type: 'Journal Articles'
+  content_type: 'Teaching Assistance'
   difficulty: 'Postgraduate'
   prerequisites: ['Econ 100']
   trending: false

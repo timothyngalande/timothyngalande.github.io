@@ -5,11 +5,11 @@ date: 2022-06-24
 # type: docs
 math: false
 tags:
-  - Teaching Assistance - (2022, 2024)
+  - 2022, 2024
 image:
   # caption: 'Embed rich media such as videos and LaTeX math'
 content_meta:
-  content_type: 'Course and Tutorial'
+  content_type: 'Teaching Assistance'
   difficulty: 'Masters'
   prerequisites: ['Math for Economists']
   trending: false

@@ -5,11 +5,11 @@ date: 2017-02-01
 # type: docs
 math: false
 tags:
-  - Teaching Assistance - (2017, 2022, 2023)
+  - 2017, 2022, 2023
 image:
   # caption: 'Embed rich media such as videos and LaTeX math'
 content_meta:
-  content_type: 'Course and Tutorial'
+  content_type: 'Teaching Assistance'
   difficulty: 'Postgraduate'
   prerequisites: ['Math 100']
   trending: false

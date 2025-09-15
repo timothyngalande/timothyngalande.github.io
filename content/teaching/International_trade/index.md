@@ -5,11 +5,11 @@ date: 2017-06-24
 # type: docs
 math: false
 tags:
-  - Teaching Assistance 
+  - 2017 
 image:
   # caption: 'Embed rich media such as videos and LaTeX math'
 content_meta:
-  content_type: 'Course and Tutorial'
+  content_type: 'Teaching Assistance'
   difficulty: 'Undergraduate'
   prerequisites: ['Econ 100']
   trending: false
