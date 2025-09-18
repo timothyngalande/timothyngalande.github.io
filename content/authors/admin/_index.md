@@ -34,7 +34,7 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:timngalande@sun.ac.za'
+    url: 'mailto:tngalande@outlook.com'
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/Timmall
@@ -50,7 +50,7 @@ interests:
   - Applied Micro/Macro economics
 
 education:
-  - area: PhD Economicw
+  - area: PhD Economics
     institution: Stellenbosch University
     date_start: 2021-04-01
     date_end: 2025-11-30
