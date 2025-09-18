@@ -70,22 +70,22 @@ education:
     date_end: 2018-11-30
     summary: 
 
-work:
-  - position: 
-    company_name: 
-    company_url:
-    company_logo: 
-    date_start:
-    date_end: 
-    summary: 
+# work:
+#   - position: 
+#     company_name: 
+#     company_url:
+#     company_logo: 
+#     date_start:
+#     date_end: 
+#     summary: 
      
-  - position: 
-    company_name: 
-    company_url: 
-    company_logo:
-    date_start:
-    date_end: 
-    summary:
+#   - position: 
+#     company_name: 
+#     company_url: 
+#     company_logo:
+#     date_start:
+#     date_end: 
+#     summary:
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
