@@ -16,7 +16,7 @@ author_notes:
 date: '2025-01-01T00:00:00Z'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2017-01-01T00:00:00Z'
+publishDate: #'2017-01-01T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -34,7 +34,7 @@ abstract: The study develops and calibrates a static general equilibrium model t
 summary: The study develops and calibrates a static general equilibrium model to quantify the aggregate economic losses attributable to discriminatory labour market policies, specifically the ``job reservation" system. A counterfactual analysis reveals that eliminating these race-based frictions would have resulted in significant gains in aggregate output. A decomposition of this effect shows that the entire productivity cost of discrimination is attributable to a decline in allocative efficiency, not the technical efficiency of firm. This demonstrates that the primary cost was the prevention of workers from sorting into their most productive roles.
 
 tags:
-  - Phd Thesis Second paper
+  - Work in progress
 
 # Display this page in the Featured widget?
 featured: true
