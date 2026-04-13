@@ -69,12 +69,12 @@ sections:
     id: writing
     content:
       title: Writing
-      subtitle: Dispatches from the field — where behavioral economics meets African development
+      subtitle: Dispatches from the field — where behavioural economics meets African development
       filters:
         folders:
           - post
     design:
       view: article-grid
-      columns: 2
+      columns: 1
 
 ---

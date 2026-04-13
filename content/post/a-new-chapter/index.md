@@ -29,6 +29,8 @@ A few weeks ago, I walked across the stage at Stellenbosch University and became
 
 My PhD did exactly that.
 
+{{< figure src="featured.jpg" caption="Graduation day, Stellenbosch University, March 2026" width="60%" class="d-block mx-auto" >}}
+
 ---
 
 ## What the thesis was really about
