@@ -19,8 +19,9 @@ featured: true
 draft: false
 
 image:
-  caption: ''
-  focal_point: ''
+  filename: featured.jpeg
+  caption: 'Graduation day, Stellenbosch University, March 2026'
+  focal_point: 'Center'
   preview_only: false
 ---
 
@@ -46,7 +47,7 @@ These studies mounted on the back of four years of archive visits, Stata code, G
 
 ---
 
-## What comes next — and why it feels continuous
+## What comes next
 
 After submitting and defending my thesis, I accepted a new research role with JPAL based at [Mobalyz](https://www.mobalyz.com), South Africa's largest dedicated financier for the minibus taxi industry, with nearly 50% of taxis on its finance and insurance books.
 
@@ -71,7 +72,7 @@ They are also, frankly, some of the most exciting research questions I have enco
 
 This and my future posts are an attempt to think out loud about the work I am and have been involved I. To share research learnings, methods and experiences in plain language. To connect historical work to the present and show how economic history does not simply look back but provide context for the future.
 
-I also want to share some learning relating to my journey: from the University of Malawi to Industry, then Stellenbosch Uni, to Zurich, to Warwick Uni,  and back to Industry the Stellenbosch again. Lessons about what it means to do research on a continent that often feels like it is studied more than understood. About the tensions, and the opportunity in sitting at the edge of research and industry.
+I also want to share some learning relating to my journey: from the University of Malawi to Industry, then Stellenbosch Uni, to Zurich, to Warwick Uni, and back to Industry the Stellenbosch again. Lessons about what it means to do research on a continent that often feels like it is studied more than understood. About the tensions, and the opportunity in sitting at the edge of research and industry.
 
 Posts will go up roughly every two weeks. Some will be long. Some will be short. All of them will be an attempt to make this work legible to people outside the seminar room.
 
