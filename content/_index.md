@@ -65,4 +65,16 @@ sections:
     
       # other options compact, list, card, showcase,citation
 
+  - block: collection
+    id: writing
+    content:
+      title: Writing
+      subtitle: Dispatches from the field — where behavioral economics meets African development
+      filters:
+        folders:
+          - post
+    design:
+      view: article-grid
+      columns: 2
+
 ---
