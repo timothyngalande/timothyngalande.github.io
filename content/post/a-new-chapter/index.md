@@ -25,7 +25,7 @@ image:
   preview_only: false
 ---
 
-A few weeks ago, I walked across the stage at Stellenbosch University and became officially inducted as Dr. Timothy Ngalande. My supervisor, Prof. Johan Fourie, who has been generous enough to share this milestone, the journey and some imppressions of my work on LinkedIn noted something remarkable: that the best research not only answers a question and closes a door, but the kind that opens five more.
+A few weeks ago, I walked across the stage at Stellenbosch University and became officially inducted as Dr. Timothy Ngalande. My supervisor, [Prof. Johan Fourie](https://johanfourie.com/research.html), who has been generous enough to share this milestone, the journey and some imppressions of my work on LinkedIn noted something remarkable: that the best research not only answers a question and closes a door, but the kind that opens five more.
 
 My PhD did exactly that.
 
