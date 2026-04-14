@@ -23,10 +23,12 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Research Manager | Behavioral & Development Economist
+role: Research Manager | Behavioural & Development Economist
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
+  - name: J-PAL 
+    url: https://www.povertyactionlab.org/j-pal-africa
   - name: Mobalyz 
     url: https://www.mobalyz.com
 
