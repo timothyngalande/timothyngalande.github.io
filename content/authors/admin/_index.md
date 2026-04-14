@@ -27,7 +27,7 @@ role: Research Manager | Behavioral & Development Economist
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Mobalyz (formerly SA Taxi)
+  - name: Mobalyz 
     url: https://www.mobalyz.com
 
 # Social network links
