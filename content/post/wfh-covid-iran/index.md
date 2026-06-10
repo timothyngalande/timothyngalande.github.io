@@ -28,7 +28,7 @@ image:
 
 *This post is a data analysis essay. The 2026 Google Trends estimates are reconstructed from documented patterns and cross-referenced with independent analyses. Sources are listed at the end.*
 
-#{{< embed-chart src="/wfh-chart/social.html" height="340px" title="COVID hit 100. The #Iran war hit 62. — WFH Index" >}}
+
 
 ---
 
@@ -42,15 +42,15 @@ Same behavioural signal. Different mechanism. And as an economist studying how p
 
 ---
 
-## Google Trends as a Behavioral Observatory
+## Google Trends as a Behavioural Observatory
 
 Before getting into the comparison, it is worth being precise about what we are actually measuring.
 
 When someone types "work from home" into Google, they are not necessarily working from home. They are signalling *consideration*, they are calculating, or at least entertaining the question. In the language of revealed preference theory, a search query is a low-cost signal of deliberation: closer to intent than action, but measurable and near-real-time in a way that survey data is not.
 
-Google Trends normalizes search interest on a scale of 0 to 100, where 100 represents peak popularity of the term in the selected period and geography. It is not an absolute count of searches; it is a proportional signal. Its value for economic analysis is not precision, it lacks that, but *timeliness and behavioral directness*. Survey data on workplace adaptation takes months to collect and publish. Search data reflects what millions of people are thinking about the morning after a policy announcement, a price spike, or a pandemic declaration.
+Google Trends normalizes search interest on a scale of 0 to 100, where 100 represents peak popularity of the term in the selected period and geography. It is not an absolute count of searches; it is a proportional signal. Its value for economic analysis is not precision, it lacks that, but *timeliness and behavioural directness*. Survey data on workplace adaptation takes months to collect and publish. Search data reflects what millions of people are thinking about the morning after a policy announcement, a price spike, or a pandemic declaration.
 
-For academic purposes, high-frequency search data has been used as a proxy for unemployment expectations, housing sentiment, consumer confidence, and pandemic behavioral response. It is noisy, but directionally reliable, and when two different crises produce two different spikes on the same index, the comparison is worth taking seriously.
+For academic purposes, high-frequency search data has been used as a proxy for unemployment expectations, housing sentiment, consumer confidence, and pandemic behavioural response. It is noisy, but directionally reliable, and when two different crises produce two different spikes on the same index, the comparison is worth taking seriously.
 
 What does the "work from home" index look like from January 2020 to May 2026? The data shows two clear spikes above a stable long-run baseline:
 
@@ -64,13 +64,13 @@ The second spike: approximately **62** in March 2026. The largest reading in fou
 
 ## The 2020 Shock: Preference, Fear, and the Overnight Migration
 
-The behavioral economics literature distinguishes between *price shocks*, which change the relative cost of options without changing what people fundamentally want, and *preference shocks*, which change the underlying utility ordering itself.
+The behavioural economics literature distinguishes between *price shocks*, which change the relative cost of options without changing what people fundamentally want, and *preference shocks*, which change the underlying utility ordering itself.
 
 COVID-19 was primarily a preference shock. The pandemic did not make the office more expensive in rand terms; it made the office feel existentially threatening. The commute carried the possibility of infection; the open-plan floor carried it further. For millions of workers, the ranking of work environments changed overnight from "office is the default, home is inconvenient" to "office is dangerous, home is the rational choice."
 
-But COVID-19 was simultaneously a mandate, a legal intervention that removed the choice entirely for most of the formal sector. South Africa's Level 5 lockdown (26 March - 30 April 2020) did not ask people to consider working from home. It ordered it. This is a methodologically important point: the March 2020 WFH spike is not cleanly interpretable as voluntary behavioral response. It is the superposition of changed preferences *and* legal compulsion, and separating the two empirically is an interesting task.
+But COVID-19 was simultaneously a mandate, a legal intervention that removed the choice entirely for most of the formal sector. South Africa's Level 5 lockdown (26 March - 30 April 2020) did not ask people to consider working from home. It ordered it. This is a methodologically important point: the March 2020 WFH spike is not cleanly interpretable as voluntary behavioural response. It is the superposition of changed preferences *and* legal compulsion, and separating the two empirically is an interesting task.
 
-What the google trends data does tell us: WFH search interest peaked at 100 the week the pandemic was declared globally — *before* the Level 5 announcement on 23 March. This means the preference shift preceded the mandate. People were already searching for alternatives before Ramaphosa made them legally compulsory. The decree reinforced and operationalized a behavioral shift already in motion.
+What the google trends data does tell us: WFH search interest peaked at 100 the week the pandemic was declared globally — *before* the Level 5 announcement on 23 March. This means the preference shift preceded the mandate. People were already searching for alternatives before Ramaphosa made them legally compulsory. The decree reinforced and operationalized a behavioural shift already in motion.
 
 By Level 4 (May 2020), the index had declined to roughly 75. By June, 50. A new long-run equilibrium, partially remote, partially hybrid — was being negotiated in real time between employers and workers. The speed of the structural change was extraordinary: in 2019, just 1.2% of South African job postings advertised remote work as an option, one of the lowest rates in the world. By mid-2020, close to 50% of formal-sector employers had some form of remote arrangement. A structural shift that might have taken a decade was compressed into six weeks.
 
