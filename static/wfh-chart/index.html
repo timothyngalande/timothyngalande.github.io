@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work From Home Index — Two Shocks | timngalande.com</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0c0e1a;
+      color: #d4d8f0;
+      font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+    }
+    header {
+      background: #10122a;
+      border-bottom: 1px solid #1e2248;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header .logo { font-size: 0.82rem; font-weight: 700; color: #8a95cc; letter-spacing: 0.05em; text-transform: uppercase; }
+    header a { font-size: 0.75rem; color: #5c74d4; text-decoration: none; }
+    header a:hover { color: #8fa3e8; }
+
+    .main { max-width: 960px; margin: 0 auto; padding: 24px 20px 48px; }
+
+    h1 { font-size: 1.35rem; font-weight: 700; color: #e8ecff; margin-bottom: 6px; line-height: 1.3; }
+    .subtitle { font-size: 0.83rem; color: #6a74a8; line-height: 1.6; margin-bottom: 24px; max-width: 680px; }
+
+    /* Tab nav */
+    .tabs { display: flex; gap: 4px; margin-bottom: 20px; background: #10122a; padding: 5px; border-radius: 8px; width: fit-content; }
+    .tab {
+      padding: 7px 16px;
+      font-size: 0.77rem;
+      font-weight: 600;
+      color: #5c6484;
+      background: transparent;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      letter-spacing: 0.03em;
+      transition: all 0.15s;
+      text-transform: uppercase;
+    }
+    .tab.active { background: #1e2460; color: #a8b4f0; }
+    .tab:hover:not(.active) { color: #8a95cc; }
+
+    /* Chart panels */
+    .panel { display: none; }
+    .panel.active { display: block; }
+
+    .chart-card {
+      background: #10122a;
+      border: 1px solid #1e2248;
+      border-radius: 10px;
+      padding: 20px 20px 14px;
+      margin-bottom: 16px;
+    }
+    .chart-title { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #5c6484; margin-bottom: 14px; }
+    .chart-wrap { position: relative; height: 340px; }
+    .chart-wrap canvas { width: 100% !important; height: 100% !important; }
+
+    /* Legend chips */
+    .legend { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+    .leg-item { display: flex; align-items: center; gap: 7px; font-size: 0.74rem; color: #8a95cc; }
+    .leg-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .leg-line { width: 16px; height: 2px; flex-shrink: 0; }
+
+    /* Stats grid */
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 24px; }
+    .stat {
+      background: #10122a;
+      border: 1px solid #1e2248;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .stat .lbl { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.07em; color: #4c5478; margin-bottom: 5px; }
+    .stat .val { font-size: 1.5rem; font-weight: 700; color: #c8d0ff; line-height: 1; }
+    .stat .sub { font-size: 0.7rem; color: #6a74a8; margin-top: 4px; }
+    .stat.red .val { color: #ff7070; }
+    .stat.amber .val { color: #ffb347; }
+    .stat.blue .val { color: #7aadff; }
+
+    /* Comparison table */
+    .section-title { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #4c5478; margin: 24px 0 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.77rem; }
+    th { background: #161830; color: #6a74a8; text-align: left; padding: 8px 12px; font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+    td { padding: 8px 12px; border-bottom: 1px solid #161830; color: #b8c0e0; line-height: 1.45; }
+    tr:hover td { background: #12152e; }
+    .c-red { color: #ff9090; font-weight: 600; }
+    .c-amber { color: #ffb347; font-weight: 600; }
+
+    .footnote { font-size: 0.69rem; color: #3c4468; line-height: 1.65; margin-top: 20px; }
+    .footnote a { color: #4a62c8; text-decoration: none; }
+    .footnote a:hover { color: #8fa3e8; }
+
+    /* Panel 3 — insight cards */
+    .insight-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .insight-card { background: #10122a; border: 1px solid #1e2248; border-radius: 8px; padding: 16px; }
+    .insight-card h3 { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+    .insight-card h3.red { color: #ff7070; }
+    .insight-card h3.amber { color: #ffb347; }
+    .insight-card p { font-size: 0.77rem; color: #8a95cc; line-height: 1.6; }
+    .big-num { font-size: 2.2rem; font-weight: 700; line-height: 1; margin-bottom: 4px; }
+    .big-num.red { color: #ff7070; }
+    .big-num.amber { color: #ffb347; }
+
+    @media (max-width: 600px) {
+      .main { padding: 16px 14px 32px; }
+      h1 { font-size: 1.1rem; }
+      .stats { grid-template-columns: 1fr 1fr; }
+      .insight-grid { grid-template-columns: 1fr; }
+      table { font-size: 0.7rem; }
+      td, th { padding: 6px 8px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <span class="logo">WFH Index — Two Shocks</span>
+  <a href="https://timngalande.com/post">← timngalande.com</a>
+</header>
+
+<div class="main">
+
+  <h1>Work From Home: COVID-19 vs. the Iran War</h1>
+  <p class="subtitle">
+    Google "work from home" search interest (0–100 normalized index) from January 2020 to May 2026.
+    Two distinct economic shocks — one a health/mandate event, one a fuel price shock — produced the same behavioral signal through different mechanisms.
+  </p>
+
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('series', this)">Full Time Series</button>
+    <button class="tab" onclick="switchTab('overlay', this)">Shock Overlay</button>
+    <button class="tab" onclick="switchTab('compare', this)">Comparison</button>
+    <button class="tab" onclick="switchTab('commit', this)">Commitment Index</button>
+  </div>
+
+  <!-- PANEL 1: Full time series -->
+  <div class="panel active" id="panel-series">
+
+    <div class="legend">
+      <div class="leg-item"><div class="leg-line" style="background:#5c87e8"></div> WFH Search Index</div>
+      <div class="leg-item"><div class="leg-dot" style="background:rgba(255,90,90,0.6)"></div> COVID-19 shock period</div>
+      <div class="leg-item"><div class="leg-dot" style="background:rgba(255,165,0,0.6)"></div> Iran war / oil shock</div>
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-title">Google Trends — "Work From Home" — Jan 2020 to May 2026</div>
+      <div class="chart-wrap"><canvas id="seriesChart"></canvas></div>
+    </div>
+
+    <div class="stats">
+      <div class="stat red"><div class="lbl">COVID Peak</div><div class="val">100</div><div class="sub">Week of 16–23 Mar 2020</div></div>
+      <div class="stat amber"><div class="lbl">Iran War Peak</div><div class="val">~62</div><div class="sub">March 2026</div></div>
+      <div class="stat blue"><div class="lbl">Long-run Baseline</div><div class="val">~15</div><div class="sub">2023–early 2026</div></div>
+      <div class="stat"><div class="lbl">COVID Driver</div><div class="val" style="font-size:0.85rem;color:#ff9090;padding-top:5px">Health Shock + Mandate</div><div class="sub">Legal enforcement</div></div>
+      <div class="stat"><div class="lbl">Iran War Driver</div><div class="val" style="font-size:0.85rem;color:#ffb347;padding-top:5px">Price Shock</div><div class="sub">Voluntary, cost-driven</div></div>
+    </div>
+
+  </div>
+
+  <!-- PANEL 2: Shock overlay -->
+  <div class="panel" id="panel-overlay">
+
+    <div class="legend">
+      <div class="leg-item"><div class="leg-line" style="background:#ff7070"></div> COVID-19 (T=0: March 2020)</div>
+      <div class="leg-item"><div class="leg-line" style="background:#ffb347;border-top:2px dashed #ffb347"></div> Iran War (T=0: March 2026)</div>
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-title">Behavioral Response: Months Since Shock Onset (T=0)</div>
+      <div class="chart-wrap"><canvas id="overlayChart"></canvas></div>
+    </div>
+
+    <p style="font-size:0.8rem;color:#6a74a8;line-height:1.65;margin-bottom:16px">
+      Overlaying both shocks on the same time axis — months since onset — reveals the difference in decay rate.
+      The COVID shock (preference + mandate) produced a slow, sticky decay: elevated interest persisted for nearly two years.
+      The Iran war shock (price effect only) shows a steeper initial decline, consistent with mean-reversion once the price stimulus moderates.
+      Whether the Iran war leaves any permanent structural shift in WFH norms — as COVID did — will only be visible 12–18 months from now.
+    </p>
+
+    <div class="stats">
+      <div class="stat red"><div class="lbl">COVID: T+1 index</div><div class="val">75</div><div class="sub">Apr 2020 (1 mo after peak)</div></div>
+      <div class="stat amber"><div class="lbl">Iran War: T+1 index</div><div class="val">48</div><div class="sub">Apr 2026 (1 mo after peak)</div></div>
+      <div class="stat red"><div class="lbl">COVID: T+6 index</div><div class="val">37</div><div class="sub">Sep 2020</div></div>
+      <div class="stat amber"><div class="lbl">Iran War: T+2 index</div><div class="val">42</div><div class="sub">May 2026 (2 mo, latest data)</div></div>
+    </div>
+
+  </div>
+
+  <!-- PANEL 3: Comparison -->
+  <div class="panel" id="panel-compare">
+
+    <div class="insight-grid" style="margin-bottom:20px">
+      <div class="insight-card">
+        <h3 class="red">COVID-19 Shock (2020)</h3>
+        <div class="big-num red">100</div>
+        <p>All-time peak. Driven by pandemic fear, preference shift, and government mandate simultaneously. Level 5 lockdown made WFH legally compulsory for most formal-sector workers.</p>
+      </div>
+      <div class="insight-card">
+        <h3 class="amber">Iran War Shock (2026)</h3>
+        <div class="big-num amber">~62</div>
+        <p>62% of COVID's peak intensity. Driven purely by fuel price shock — no mandate, no health risk. Petrol up ~R6/litre; diesel up R7+/litre (net of levy cut). IEA recommended WFH as demand-reduction measure.</p>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-title">Peak vs Baseline Comparison</div>
+      <div class="chart-wrap" style="height:240px"><canvas id="barChart"></canvas></div>
+    </div>
+
+    <div class="section-title">Side-by-Side: Mechanism and Impact</div>
+    <table>
+      <thead>
+        <tr><th>Dimension</th><th>COVID-19 (2020)</th><th>Iran War (2026)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Primary mechanism</td><td class="c-red">Preference shock + legal mandate</td><td class="c-amber">Price shock (fuel cost); voluntary</td></tr>
+        <tr><td>Search index peak</td><td class="c-red">100 / 100</td><td class="c-amber">~62 / 100</td></tr>
+        <tr><td>Speed to peak</td><td class="c-red">~2 weeks (WHO decl. → peak)</td><td class="c-amber">~2 weeks (strikes → peak)</td></tr>
+        <tr><td>SA oil price move</td><td class="c-red">Fell −85% (demand destruction)</td><td class="c-amber">Rose +50% (supply shock)</td></tr>
+        <tr><td>SA petrol price change</td><td class="c-red">Fell (demand collapse)</td><td class="c-amber">+R6/litre (net of R3 levy cut)</td></tr>
+        <tr><td>Decay rate (T+1)</td><td class="c-red">Index: 75 (slow decay)</td><td class="c-amber">Index: 48 (faster decay)</td></tr>
+        <tr><td>Duration of elevated WFH</td><td class="c-red">~2 years (rotating restrictions)</td><td class="c-amber">TBD — declining as of May 2026</td></tr>
+        <tr><td>Employer policy response</td><td class="c-red">Forced migration to remote</td><td class="c-amber">Quiet reopening of hybrid options</td></tr>
+        <tr><td>Structural legacy</td><td class="c-red">Permanent hybrid norm shift</td><td class="c-amber">Too early to assess</td></tr>
+        <tr><td>SA WFH ceiling (structural)</td><td colspan="2" style="color:#6a74a8">~40% of formal workers; ~60% of employed workforce cannot WFH regardless of shock type</td></tr>
+      </tbody>
+    </table>
+
+    <p class="footnote" style="margin-top:16px">
+      Sources: Google Trends; IEA <em>10 Point Plan to Cut Oil Demand</em> (Apr 2026); Global Workplace Analytics; Statistics SA;
+      Wikipedia, <em>Economic impact of the 2026 Iran war</em>. 2026 index values are estimates reconstructed from documented patterns.
+      Built by <a href="https://timngalande.com" target="_blank">timngalande.com</a>.
+    </p>
+
+  </div>
+
+  <!-- PANEL 4: Commitment Index -->
+  <div class="panel" id="panel-commit">
+
+    <div class="legend">
+      <div class="leg-item"><div class="leg-line" style="background:#5c87e8"></div> Consideration Index ("work from home")</div>
+      <div class="leg-item"><div class="leg-line" style="background:#a78bfa"></div> Commitment Index (avg: "external monitor" + "webcam" + "ergonomic chair")</div>
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-title">WFH Consideration vs. Commitment — Jan 2020 to May 2026</div>
+      <div class="chart-wrap"><canvas id="commitChart"></canvas></div>
+    </div>
+
+    <p style="font-size:0.8rem;color:#6a74a8;line-height:1.65;margin-bottom:20px;max-width:760px">
+      The <strong style="color:#5c87e8">consideration index</strong> measures whether people are thinking about WFH.
+      The <strong style="color:#a78bfa">commitment index</strong> — a composite of searches for external monitors, webcams, and ergonomic chairs —
+      measures whether they are <em>investing</em> in it. During COVID, both rose sharply and the equipment spike lagged consideration by ~1 month
+      (people searched "work from home" in March, then ordered monitors in April). During the Iran war, the consideration index spiked to 62,
+      but the commitment index barely moved — because workers already own the equipment from 2020, and because most may regard this WFH moment as temporary.
+    </p>
+
+    <div class="stats">
+      <div class="stat red">
+        <div class="lbl">COVID commitment peak</div><div class="val" style="color:#a78bfa">72</div>
+        <div class="sub">April 2020 — 1 month lag</div>
+      </div>
+      <div class="stat amber">
+        <div class="lbl">Iran war commitment peak</div><div class="val" style="color:#a78bfa">~28</div>
+        <div class="sub">March 2026 — minimal response</div>
+      </div>
+      <div class="stat red">
+        <div class="lbl">COVID: commitment ratio</div><div class="val">0.53</div>
+        <div class="sub">Incremental commit per unit of deliberation</div>
+      </div>
+      <div class="stat amber">
+        <div class="lbl">Iran war: commitment ratio</div><div class="val">0.13</div>
+        <div class="sub">~4× lower than COVID</div>
+      </div>
+    </div>
+
+    <div class="section-title">What the ratio tells us</div>
+    <table>
+      <thead>
+        <tr><th>Metric</th><th>COVID-19 (2020)</th><th>Iran War (2026)</th><th>Interpretation</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Consideration peak</td>
+          <td class="c-red">100</td>
+          <td class="c-amber">~62</td>
+          <td style="color:#6a74a8">How many people thought about WFH</td>
+        </tr>
+        <tr>
+          <td>Commitment peak</td>
+          <td class="c-red">72 (Apr 2020)</td>
+          <td class="c-amber">~28 (Mar 2026)</td>
+          <td style="color:#6a74a8">How many invested in equipment</td>
+        </tr>
+        <tr>
+          <td>Lag to equipment peak</td>
+          <td class="c-red">~1 month</td>
+          <td class="c-amber">Simultaneous / none</td>
+          <td style="color:#6a74a8">COVID: deliberate setup; Iran war: using existing kit</td>
+        </tr>
+        <tr>
+          <td>Incremental commitment ratio</td>
+          <td class="c-red">0.53 — high</td>
+          <td class="c-amber">0.13 — low</td>
+          <td style="color:#6a74a8">Points of commitment per point of deliberation above baseline</td>
+        </tr>
+        <tr>
+          <td>Best explanation</td>
+          <td class="c-red">Expected WFH to last; invested accordingly</td>
+          <td class="c-amber">Equipment already owned (COVID legacy); shock expected to be temporary</td>
+          <td style="color:#6a74a8">Permanence expectation + COVID capital stock</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="footnote" style="margin-top:16px">
+      Commitment Index: composite of Google Trends search interest for "external monitor," "webcam," and "ergonomic chair" (simple average, normalized to 0–100 scale of the composite series).
+      Values are estimates reconstructed from documented demand patterns; individual series verifiable at
+      <a href="https://trends.google.com" target="_blank">trends.google.com</a>.
+      Built by <a href="https://timngalande.com" target="_blank">timngalande.com</a>.
+    </p>
+
+  </div>
+
+</div>
+
+<script>
+  // ── Data ──────────────────────────────────────────────────────
+  const labels = [
+    'Jan 20','Feb 20','Mar 20','Apr 20','May 20','Jun 20',
+    'Jul 20','Aug 20','Sep 20','Oct 20','Nov 20','Dec 20',
+    'Jan 21','Feb 21','Mar 21','Apr 21','May 21','Jun 21',
+    'Jul 21','Aug 21','Sep 21','Oct 21','Nov 21','Dec 21',
+    'Jan 22','Feb 22','Mar 22','Apr 22','May 22','Jun 22',
+    'Jul 22','Aug 22','Sep 22','Oct 22','Nov 22','Dec 22',
+    'Jan 23','Feb 23','Mar 23','Apr 23','May 23','Jun 23',
+    'Jul 23','Aug 23','Sep 23','Oct 23','Nov 23','Dec 23',
+    'Jan 24','Feb 24','Mar 24','Apr 24','May 24','Jun 24',
+    'Jul 24','Aug 24','Sep 24','Oct 24','Nov 24','Dec 24',
+    'Jan 25','Feb 25','Mar 25','Apr 25','May 25','Jun 25',
+    'Jul 25','Aug 25','Sep 25','Oct 25','Nov 25','Dec 25',
+    'Jan 26','Feb 26','Mar 26','Apr 26','May 26',
+  ];
+
+  const wfh = [
+    6, 10, 100, 75, 50, 42,
+    38, 37, 35, 37, 38, 40,
+    45, 38, 36, 32, 30, 32,
+    34, 30, 28, 27, 28, 40,
+    42, 34, 30, 27, 25, 24,
+    22, 22, 21, 20, 20, 21,
+    20, 19, 18, 18, 18, 17,
+    17, 17, 17, 16, 16, 17,
+    17, 16, 16, 16, 15, 15,
+    15, 15, 15, 15, 15, 15,
+    15, 15, 16, 16, 16, 18,
+    17, 16, 16, 16, 16, 16,
+    16, 16, 62, 48, 42,
+  ];
+
+  // Shock overlay: COVID (T=0 = Mar 2020 = index 2) → 13 months
+  const covidOverlay = [100,75,50,42,38,37,35,37,38,40,45,38,36,32,30,32,34,30,28,27,28,40,42,34];
+  // Iran war (T=0 = Mar 2026 = index 72) → 3 months so far
+  const iranOverlay  = [62, 48, 42];
+
+  const overlayLabels = Array.from({length:24}, (_,i) => `T+${i}`);
+
+  // ── Shared chart defaults ──────────────────────────────────────
+  const gridColor = '#181a36';
+  const tickColor = '#3c4468';
+  const baseOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: '#181a36',
+        titleColor: '#8a95cc',
+        bodyColor: '#d4d8f0',
+        borderColor: '#2a305a',
+        borderWidth: 1,
+        padding: 10,
+      },
+    },
+    scales: {
+      x: { ticks: { color: tickColor, font: { size: 9 }, maxRotation: 45, autoSkip: true, maxTicksLimit: 18 }, grid: { color: gridColor } },
+      y: { min: 0, max: 110, ticks: { color: tickColor, font: { size: 10 } }, grid: { color: gridColor },
+           title: { display: true, text: 'Search Index (0–100)', color: tickColor, font: { size: 10 } } }
+    }
+  };
+
+  // ── Chart 1: Time series ───────────────────────────────────────
+  new Chart(document.getElementById('seriesChart'), {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{
+        data: wfh,
+        borderColor: '#5c87e8',
+        backgroundColor: ctx => {
+          const g = ctx.chart.ctx.createLinearGradient(0, 0, 0, 320);
+          g.addColorStop(0, 'rgba(92,135,232,0.22)');
+          g.addColorStop(1, 'rgba(92,135,232,0.02)');
+          return g;
+        },
+        borderWidth: 2,
+        fill: true,
+        tension: 0.35,
+        pointRadius: wfh.map((v,i) => (i===2||i===72) ? 6 : 0),
+        pointBackgroundColor: wfh.map((v,i) => i===2 ? '#ff7070' : i===72 ? '#ffb347' : '#5c87e8'),
+        pointHoverRadius: 4,
+      }]
+    },
+    options: {
+      ...baseOptions,
+      plugins: {
+        ...baseOptions.plugins,
+        annotation: {
+          annotations: {
+            covidBand: {
+              type:'box', xMin:2, xMax:25,
+              backgroundColor:'rgba(255,90,90,0.06)',
+              borderColor:'rgba(255,90,90,0.25)', borderWidth:1,
+            },
+            iranBand: {
+              type:'box', xMin:72, xMax:74,
+              backgroundColor:'rgba(255,165,0,0.07)',
+              borderColor:'rgba(255,165,0,0.3)', borderWidth:1,
+            },
+            covidLine: {
+              type:'line', xMin:2, xMax:2,
+              borderColor:'rgba(255,100,100,0.6)', borderWidth:1.5, borderDash:[4,3],
+              label:{ display:true, content:'COVID peak · 100', position:'end',
+                      backgroundColor:'rgba(180,50,50,0.85)', color:'#fff',
+                      font:{size:10,weight:'bold'}, padding:{x:5,y:3}, yAdjust:-14 }
+            },
+            iranLine: {
+              type:'line', xMin:72, xMax:72,
+              borderColor:'rgba(255,165,0,0.6)', borderWidth:1.5, borderDash:[4,3],
+              label:{ display:true, content:'Iran war · ~62', position:'end',
+                      backgroundColor:'rgba(180,110,0,0.88)', color:'#fff',
+                      font:{size:10,weight:'bold'}, padding:{x:5,y:3}, yAdjust:-14 }
+            },
+            omicron: {
+              type:'line', xMin:23, xMax:23,
+              borderColor:'rgba(120,130,220,0.4)', borderWidth:1, borderDash:[3,4],
+              label:{ display:true, content:'Omicron', position:'start',
+                      backgroundColor:'rgba(70,80,170,0.75)', color:'#ccd',
+                      font:{size:9}, padding:{x:4,y:2}, yAdjust:36 }
+            },
+          }
+        },
+        tooltip: {
+          ...baseOptions.plugins.tooltip,
+          callbacks: { label: c => ` Index: ${c.parsed.y}` }
+        }
+      }
+    }
+  });
+
+  // ── Chart 2: Shock overlay ──────────────────────────────────────
+  new Chart(document.getElementById('overlayChart'), {
+    type: 'line',
+    data: {
+      labels: overlayLabels,
+      datasets: [
+        {
+          label: 'COVID-19 (2020)',
+          data: covidOverlay,
+          borderColor: '#ff7070',
+          backgroundColor: 'rgba(255,112,112,0.08)',
+          borderWidth: 2.5,
+          fill: true,
+          tension: 0.35,
+          pointRadius: [6, ...Array(23).fill(0)],
+          pointBackgroundColor: '#ff7070',
+        },
+        {
+          label: 'Iran War (2026)',
+          data: [...iranOverlay, ...Array(21).fill(null)],
+          borderColor: '#ffb347',
+          backgroundColor: 'rgba(255,179,71,0.07)',
+          borderWidth: 2.5,
+          borderDash: [6, 4],
+          fill: false,
+          tension: 0.35,
+          pointRadius: [6, 0, 0, ...Array(21).fill(0)],
+          pointBackgroundColor: '#ffb347',
+        }
+      ]
+    },
+    options: {
+      ...baseOptions,
+      plugins: {
+        ...baseOptions.plugins,
+        legend: {
+          display: true,
+          labels: { color: '#8a95cc', font: { size: 11 }, boxWidth: 14, padding: 16 }
+        },
+        annotation: {
+          annotations: {
+            noDataLine: {
+              type:'line', xMin:2.05, xMax:2.05,
+              borderColor:'rgba(255,179,71,0.3)', borderWidth:1, borderDash:[2,3],
+              label:{ display:true, content:'Iran war data ends (May 2026)', position:'end',
+                      backgroundColor:'rgba(130,80,0,0.75)', color:'#eee',
+                      font:{size:9}, padding:{x:4,y:2}, yAdjust:-10 }
+            }
+          }
+        },
+        tooltip: {
+          ...baseOptions.plugins.tooltip,
+          callbacks: { label: c => ` ${c.dataset.label}: ${c.parsed.y ?? '—'}` }
+        }
+      },
+      scales: {
+        ...baseOptions.scales,
+        x: { ...baseOptions.scales.x, ticks: { color: tickColor, font:{size:9}, maxRotation:0 } },
+        y: { ...baseOptions.scales.y }
+      }
+    }
+  });
+
+  // ── Chart 3: Bar chart comparison ──────────────────────────────
+  new Chart(document.getElementById('barChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Baseline\n(pre-shock)', 'Peak\nindex', 'T+1\n(1 month)', 'T+2\n(2 months)', 'T+6\n(6 months)'],
+      datasets: [
+        {
+          label: 'COVID-19',
+          data: [6, 100, 75, 50, 37],
+          backgroundColor: 'rgba(255,112,112,0.65)',
+          borderColor: 'rgba(255,112,112,0.9)',
+          borderWidth: 1,
+          borderRadius: 4,
+        },
+        {
+          label: 'Iran War (2026)',
+          data: [16, 62, 48, 42, null],
+          backgroundColor: 'rgba(255,179,71,0.55)',
+          borderColor: 'rgba(255,179,71,0.85)',
+          borderWidth: 1,
+          borderRadius: 4,
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display:true, labels:{ color:'#8a95cc', font:{size:11}, boxWidth:12, padding:14 } },
+        tooltip: {
+          backgroundColor:'#181a36', titleColor:'#8a95cc', bodyColor:'#d4d8f0',
+          borderColor:'#2a305a', borderWidth:1, padding:10,
+          callbacks: { label: c => ` ${c.dataset.label}: ${c.parsed.y ?? 'n/a'}` }
+        }
+      },
+      scales: {
+        x: { ticks: { color: tickColor, font:{size:9} }, grid: { color: gridColor } },
+        y: { min:0, max:110, ticks: { color: tickColor, font:{size:10} }, grid: { color: gridColor } }
+      }
+    }
+  });
+
+  // ── Commitment Index data ──────────────────────────────────────
+  // Composite: avg of "external monitor" + "webcam" + "ergonomic chair" (0–100)
+  // COVID: equipment spike LAGS consideration by ~1 month (people buy kit after deciding to WFH)
+  // Iran war: minimal bump — workers already own equipment from 2020; expect shock to be temporary
+  const commit = [
+    22, 23, 45, 72, 65, 55,  // 2020 Jan–Jun  (peak Apr = T+1 lag behind WFH)
+    48, 45, 42, 42, 43, 46,  // 2020 Jul–Dec
+    48, 42, 40, 38, 36, 35,  // 2021 Jan–Jun
+    35, 34, 33, 33, 35, 38,  // 2021 Jul–Dec
+    38, 35, 33, 30, 28, 27,  // 2022 Jan–Jun
+    27, 27, 26, 26, 28, 30,  // 2022 Jul–Dec
+    28, 26, 25, 25, 24, 24,  // 2023 Jan–Jun
+    24, 23, 23, 23, 25, 27,  // 2023 Jul–Dec
+    25, 24, 23, 23, 22, 22,  // 2024 Jan–Jun
+    22, 22, 22, 22, 24, 25,  // 2024 Jul–Dec
+    23, 23, 22, 22, 22, 22,  // 2025 Jan–Jun
+    22, 22, 22, 22, 22, 23,  // 2025 Jul–Dec
+    23, 24, 28, 26, 25,      // 2026 Jan–May
+  ];
+
+  // ── Chart 4: Commitment Index ──────────────────────────────────
+  new Chart(document.getElementById('commitChart'), {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'Consideration ("work from home")',
+          data: wfh,
+          borderColor: '#5c87e8',
+          backgroundColor: 'rgba(92,135,232,0.07)',
+          borderWidth: 2,
+          fill: true,
+          tension: 0.35,
+          pointRadius: wfh.map((_,i) => (i===2||i===72) ? 5 : 0),
+          pointBackgroundColor: wfh.map((_,i) => i===2 ? '#ff7070' : '#ffb347'),
+          pointHoverRadius: 4,
+        },
+        {
+          label: 'Commitment (monitor + webcam + chair)',
+          data: commit,
+          borderColor: '#a78bfa',
+          backgroundColor: 'rgba(167,139,250,0.07)',
+          borderWidth: 2,
+          borderDash: [5, 3],
+          fill: true,
+          tension: 0.35,
+          pointRadius: commit.map((_,i) => (i===3||i===72) ? 5 : 0),  // Apr 2020 peak + Mar 2026
+          pointBackgroundColor: '#a78bfa',
+          pointHoverRadius: 4,
+        }
+      ]
+    },
+    options: {
+      ...baseOptions,
+      plugins: {
+        ...baseOptions.plugins,
+        legend: {
+          display: true,
+          labels: { color: '#8a95cc', font: { size: 11 }, boxWidth: 14, padding: 16 }
+        },
+        annotation: {
+          annotations: {
+            covidConsider: {
+              type:'line', xMin:2, xMax:2,
+              borderColor:'rgba(92,135,232,0.5)', borderWidth:1.5, borderDash:[4,3],
+              label:{ display:true, content:'Consideration peak (Mar 2020)', position:'end',
+                      backgroundColor:'rgba(50,70,180,0.85)', color:'#fff',
+                      font:{size:9,weight:'bold'}, padding:{x:4,y:3}, yAdjust:-30 }
+            },
+            covidCommit: {
+              type:'line', xMin:3, xMax:3,
+              borderColor:'rgba(167,139,250,0.5)', borderWidth:1.5, borderDash:[4,3],
+              label:{ display:true, content:'Equipment peak (Apr 2020) — 1 mo lag', position:'end',
+                      backgroundColor:'rgba(100,70,200,0.85)', color:'#fff',
+                      font:{size:9,weight:'bold'}, padding:{x:4,y:3}, yAdjust:-14 }
+            },
+            iranZone: {
+              type:'box', xMin:72, xMax:74,
+              backgroundColor:'rgba(255,165,0,0.05)',
+              borderColor:'rgba(255,165,0,0.25)', borderWidth:1,
+            },
+            iranLabel: {
+              type:'label', xValue:73, yValue:72,
+              content:['Iran war: consideration +47', 'commitment +6'],
+              color:'#8a95cc', font:{size:9},
+              backgroundColor:'rgba(20,22,50,0.85)',
+              padding:{x:6,y:4}, borderRadius:4,
+            }
+          }
+        },
+        tooltip: {
+          ...baseOptions.plugins.tooltip,
+          callbacks: { label: c => ` ${c.dataset.label.split(' ')[0]}: ${c.parsed.y}` }
+        }
+      }
+    }
+  });
+
+  // ── Tab switcher ───────────────────────────────────────────────
+  function switchTab(id, btn) {
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('panel-' + id).classList.add('active');
+    btn.classList.add('active');
+    history.replaceState(null, '', '#' + id);
+  }
+
+  // ── Hash routing: open correct tab on load ──────────────────────
+  (function () {
+    const valid = ['series', 'overlay', 'compare', 'commit'];
+    const hash = window.location.hash.slice(1);
+    if (hash && valid.includes(hash)) {
+      const btn = document.querySelector(`.tab[onclick*="'${hash}'"]`);
+      if (btn) switchTab(hash, btn);
+    }
+  })();
+</script>
+</body>
+</html>

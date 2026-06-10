@@ -1,0 +1,14 @@
+{{- $src := .Get "src" -}}
+{{- $height := .Get "height" | default "520px" -}}
+{{- $title := .Get "title" | default "Interactive chart" -}}
+<div style="margin: 2rem 0; border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 4px 24px rgba(0,0,0,0.18);">
+  <iframe
+    src="{{ $src }}"
+    title="{{ $title }}"
+    width="100%"
+    height="{{ $height }}"
+    style="display:block; border:none; background:#0c0e1a;"
+    loading="lazy"
+    allowfullscreen>
+  </iframe>
+</div>
