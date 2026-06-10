@@ -28,7 +28,7 @@ image:
 
 *This post is a data analysis essay. The 2026 Google Trends estimates are reconstructed from documented patterns and cross-referenced with independent analyses. Sources are listed at the end.*
 
-{{< embed-chart src="/wfh-chart/social.html" height="340px" title="COVID hit 100. The Iran war hit 62. — WFH Index" >}}
+#{{< embed-chart src="/wfh-chart/social.html" height="340px" title="COVID hit 100. The #Iran war hit 62. — WFH Index" >}}
 
 ---
 
