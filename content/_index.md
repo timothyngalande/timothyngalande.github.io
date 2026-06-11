@@ -68,13 +68,13 @@ sections:
   - block: collection
     id: writing
     content:
-      title: Writing
+      title: Posts and Thoughts
       subtitle: Dispatches from the field — where behavioural economics meets African development
       filters:
         folders:
           - post
     design:
       view: article-grid
-      columns: 1
+      columns: 2
 
 ---

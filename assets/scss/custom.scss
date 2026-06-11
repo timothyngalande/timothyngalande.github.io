@@ -1,0 +1,18 @@
+// ── Post card thumbnails ──────────────────────────────────────────
+// HugoBlox applies a brightness filter and dark overlay to card images
+// by default. This removes it so screenshots and dark-background images
+// render at full fidelity on the Posts listing page.
+
+.article-banner,
+.article-banner img,
+.card-image img,
+.wp-block-image img {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+// Remove any pseudo-element overlay on card image wrappers
+.article-banner::after,
+.card-image::after {
+  display: none !important;
+}
