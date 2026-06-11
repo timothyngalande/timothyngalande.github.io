@@ -21,7 +21,7 @@ draft: false
 image:
   filename: featured.jpeg
   caption: 'Graduation day, Stellenbosch University, March 2026'
-  focal_point: 'Center'
+  focal_point: 'Top'
   preview_only: false
 ---
 

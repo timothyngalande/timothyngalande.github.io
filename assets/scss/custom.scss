@@ -1,18 +1,36 @@
-// ── Post card thumbnails ──────────────────────────────────────────
-// HugoBlox applies a brightness filter and dark overlay to card images
-// by default. This removes it so screenshots and dark-background images
-// render at full fidelity on the Posts listing page.
+// ── Post card thumbnail brightness fix ───────────────────────────
+// HugoBlox applies Tailwind brightness utilities (brightness-50,
+// brightness-75) to card image wrappers to create a dimming effect.
+// The rules below restore full brightness for all card/article images.
 
-.article-banner,
+// Tailwind brightness utility classes applied to wrapper divs
+.brightness-50,
+.brightness-75,
+.brightness-90,
+[class*="brightness-"] {
+  filter: brightness(1) !important;
+}
+
+// Direct img targets (covers both wrapper and img-level application)
 .article-banner img,
 .card-image img,
-.wp-block-image img {
+article img,
+.card img,
+figure img {
   filter: none !important;
   opacity: 1 !important;
 }
 
-// Remove any pseudo-element overlay on card image wrappers
+// Pseudo-element overlays
 .article-banner::after,
-.card-image::after {
+.card-image::after,
+.card::after {
   display: none !important;
+}
+
+// Dark mode — prevent extra dimming in dark theme
+@media (prefers-color-scheme: dark) {
+  [class*="dark:brightness-"] {
+    filter: brightness(1) !important;
+  }
 }
