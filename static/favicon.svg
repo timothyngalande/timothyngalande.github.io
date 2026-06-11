@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="50" fill="#111327"/>
+  <!-- Subtle inner ring for definition against light browser tabs -->
+  <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  <!-- TN monogram -->
+  <text
+    x="50" y="63"
+    font-family="Inter, Helvetica Neue, Arial, sans-serif"
+    font-size="38"
+    font-weight="700"
+    fill="#ffffff"
+    text-anchor="middle"
+    letter-spacing="-1">TN</text>
+</svg>
