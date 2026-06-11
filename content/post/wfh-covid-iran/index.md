@@ -23,12 +23,12 @@ draft: false
 image:
   caption: 'Two spikes on a single index. COVID peaked at 100. The Iran war reached ~62. Same signal, different mechanism and different implications for the South African economy.'
   focal_point: 'Center'
-  preview_only: false
+  preview_only: true
 ---
 
 *This post is a data analysis essay. The 2026 Google Trends estimates are reconstructed from documented patterns and cross-referenced with independent analyses. Sources are listed at the end.*
 
-
+{{< figure src="featured.png" caption="Two spikes on a single index. COVID peaked at 100. The Iran war reached ~62. Same signal, different mechanism." >}}
 
 ---
 
